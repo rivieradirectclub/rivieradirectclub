@@ -11,7 +11,9 @@ body{margin:0;font-family:'Plus Jakarta Sans',sans-serif;background:var(--sand);
 .wrap{max-width:820px;margin:0 auto;padding:36px 24px 48px}
 .nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:64px}
 .logo{height:46px;border-radius:8px}
-.nav a{font-size:12px;font-weight:700;letter-spacing:1.2px;text-decoration:none;background:var(--ink);color:#fff;padding:10px 18px;border-radius:100px}
+.nav-links{display:flex;gap:8px;align-items:center}
+.btn-nav{font-size:12px;font-weight:700;letter-spacing:1.2px;text-decoration:none;background:var(--ink);color:#fff;padding:10px 18px;border-radius:100px}
+.btn-nav-light{font-size:12px;font-weight:700;letter-spacing:1.2px;text-decoration:none;background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:10px 18px;border-radius:100px}
 h1{font-family:'Fraunces',serif;font-size:54px;line-height:.92;letter-spacing:-1.8px;margin:0 0 22px;font-weight:700}
 h1 i{font-style:italic;color:var(--gold);font-weight:600}
 .lead{font-size:19px;line-height:1.7;color:#4f4439;max-width:640px;margin:0 0 8px}
@@ -39,7 +41,10 @@ h1 i{font-style:italic;color:var(--gold);font-weight:600}
 
 <div class="nav">
 <img src="./logo.jpg" class="logo" alt="Riviera Direct Club">
-<a href="./contatti.html">CONTATTI</a>
+<div class="nav-links">
+<a href="./blog/index.html" class="btn-nav-light">BLOG</a>
+<a href="./contatti.html" class="btn-nav">CONTATTI</a>
+</div>
 </div>
 
 <div class="pill"><span class="dot"></span> APERTO A TUTTI GLI ESERCENTI DEL PONENTE</div>
@@ -61,6 +66,7 @@ h1 i{font-style:italic;color:var(--gold);font-weight:600}
 <span style="font-size:14px;color:#6b5e52;line-height:1.5">Prima struttura fondatrice del Club. Partiti come progetto pilota per testare il sistema sul territorio.</span>
 <div style="margin-top:10px">
 <a class="link" href="https://www.google.com/search?q=Hotel+Rainbow+Arma+di+Taggia" target="_blank">Vedi su Google →</a>
+<a class="link" href="./blog/index.html">Leggi i consigli per albergatori →</a>
 <a class="link" href="./contatti.html">Vuoi essere il prossimo?</a>
 </div>
 </div>
@@ -71,7 +77,7 @@ h1 i{font-style:italic;color:var(--gold);font-weight:600}
 <a class="btn" href="./contatti.html">Contattaci →</a>
 </div>
 
-<div class="foot">© Riviera Direct Club — Badalucco • Sanremo • Arma di Taggia • Bordighera • Riva Ligure</div>
+<div class="foot">© Riviera Direct Club — Badalucco • Sanremo • Arma di Taggia • Bordighera • Riva Ligure<br><a href="./blog/index.html" style="color:#9a8c7e">Consigli per Albergatori</a></div>
 
 </div>
 </body>
