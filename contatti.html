@@ -1,48 +1,80 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riviera Direct Club - Luxury Hotel Agency</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatti - Riviera Direct Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;500;700&display=swap');
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#050505;color:#fff;font-family:'Montserrat',sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center}
-.top{padding:50px 20px 20px;text-align:center;width:100%;background:radial-gradient(600px at 50% 0%, #1a1a1a 0%, #050505 70%)}
-.logo-wrap{width:132px;height:132px;margin:0 auto 22px;border-radius:50%;padding:3px;background:linear-gradient(145deg,#e6c88a,#8a6d3b);box-shadow:0 0 30px rgba(230,200,138,0.35)}
-.logo-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:#000}
-h1{font-family:'Cormorant Garamond',serif;font-size:32px;letter-spacing:2px;color:#f3e6c0;font-weight:600}
-.sub{margin-top:8px;color:#c9a86a;letter-spacing:4px;font-size:12px;text-transform:uppercase;font-weight:300}
-.divider{width:60px;height:1px;background:linear-gradient(90deg,transparent,#c9a86a,transparent);margin:26px auto}
-.container{width:100%;max-width:380px;padding:0 20px 40px}
-.card{background:linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02));border:1px solid rgba(201,168,106,0.18);border-radius:22px;padding:22px;backdrop-filter:blur(12px)}
-.btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:17px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13.5px;letter-spacing:0.5px;margin-bottom:11px;transition:all 0.25s ease}
-.btn:active{transform:scale(0.98)}
-.btn-call{background:linear-gradient(135deg,#1e8a4c,#115a30);color:#fff;box-shadow:0 8px 20px rgba(30,138,76,0.35)}
-.btn-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 8px 20px rgba(37,211,102,0.3)}
-.btn-ig{background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff;box-shadow:0 8px 20px rgba(214,41,118,0.35)}
-.btn-tg{background:linear-gradient(135deg,#2AABEE,#229ED9);color:#fff;box-shadow:0 8px 20px rgba(42,171,238,0.3)}
-.btn-mail{background:#141414;color:#e6c88a;border:1px solid rgba(230,200,138,0.25)}
-.btn:hover{filter:brightness(1.12);transform:translateY(-2px)}
-.note{margin-top:18px;text-align:center;color:#666;font-size:11px;letter-spacing:1px}
+:root{--sand:#fdf6ec;--ink:#14110e;--gold:#c89a4a;--line:#efe6d3;--paper:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Plus Jakarta Sans',sans-serif;background:var(--sand);color:var(--ink);-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:36px 24px 48px}
+.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:64px}
+.logo{height:46px;border-radius:8px}
+.nav-links{display:flex;gap:8px;align-items:center}
+.btn-nav{font-size:12px;font-weight:700;letter-spacing:1.2px;text-decoration:none;background:var(--ink);color:#fff;padding:10px 18px;border-radius:100px}
+.btn-nav-light{font-size:12px;font-weight:700;letter-spacing:1.2px;text-decoration:none;background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:10px 18px;border-radius:100px}
+h1{font-family:'Fraunces',serif;font-size:46px;line-height:.95;letter-spacing:-1.2px;margin:0 0 16px;font-weight:700}
+h1 i{font-style:italic;color:var(--gold);font-weight:600}
+.lead{font-size:18px;line-height:1.7;color:#4f4439;max-width:600px;margin:0 0 32px}
+.grid{display:grid;gap:14px;margin:0 0 32px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;display:flex;gap:16px;align-items:center;box-shadow:0 8px 24px rgba(20,17,14,.04);text-decoration:none;color:var(--ink);transition:transform .15s ease}
+.card:hover{transform:translateY(-2px)}
+.icon{width:44px;height:44px;border-radius:100px;background:var(--sand);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.card h3{margin:0 0 4px;font-size:16px;font-weight:700}
+.card p{margin:0;font-size:14px;color:#6b5e52;line-height:1.5}
+.card .arrow{margin-left:auto;font-size:18px;color:var(--gold);font-weight:700}
+.nota{background:var(--paper);border:1px dashed var(--line);border-radius:16px;padding:18px 20px;font-size:13px;line-height:1.6;color:#6b5e52;margin-top:8px}
+.foot{margin-top:32px;text-align:center;color:#9a8c7e;font-size:11px;letter-spacing:.3px}
+@media(max-width:600px){h1{font-size:36px}}
 </style>
 </head>
 <body>
-<div class="top">
-<div class="logo-wrap"><img src="logo.jpg" alt="Riviera Direct Club"></div>
-<h1>RIVIERA DIRECT CLUB</h1>
-<div class="sub">Luxury Hotel Agency</div>
-<div class="divider"></div>
+<div class="wrap">
+
+<div class="nav">
+<a href="./index.html"><img src="./logo.jpg" class="logo" alt="Riviera Direct Club"></a>
+<div class="nav-links">
+<a href="./blog/index.html" class="btn-nav-light">BLOG</a>
+<a href="./index.html" class="btn-nav-light">HOME</a>
 </div>
-<div class="container">
-<div class="card">
-<a href="tel:+393331977655" class="btn btn-call">📞 CHIAMA ORA - 333 1977655</a>
-<a href="https://wa.me/393331977655" class="btn btn-wa">💬 WHATSAPP DIRETTO</a>
-<a href="https://instagram.com/rivieradirectclub" target="_blank" class="btn btn-ig">📸 INSTAGRAM</a>
-<a href="https://t.me/RivieraDirectClub" class="btn btn-tg">✈️ TELEGRAM</a>
-<a href="mailto:rivieradirectclub@gmail.com" class="btn btn-mail">📧 EMAIL</a>
 </div>
-<div class="note">LIGURIA • COSTA AZZURRA • EXCLUSIVE STAYS</div>
+
+<h1>Parliamone, <i>10 minuti.</i></h1>
+<p class="lead">Ti mostro come funziona il sistema per più prenotazioni dirette. Senza impegno, senza tecnicismi. Scegli tu come contattarmi.</p>
+
+<div class="grid">
+<a href="https://wa.me/393331977655?text=Ciao%20Riviera%20Direct%20Club%2C%20vorrei%20sapere%20come%20avere%20pi%C3%B9%20prenotazioni%20dirette%20per%20la%20mia%20struttura" class="card">
+<div class="icon">💬</div>
+<div><h3>WhatsApp Diretto</h3><p>Il modo più rapido. Ti rispondo io personalmente.</p></div>
+<div class="arrow">→</div>
+</a>
+
+<a href="tel:+393331977655" class="card">
+<div class="icon">📞</div>
+<div><h3>Chiama Ora</h3><p>333 1977655 - Se non rispondo ti richiamo in giornata</p></div>
+<div class="arrow">→</div>
+</a>
+
+<a href="mailto:rivieradirectclub@gmail.com" class="card">
+<div class="icon">📧</div>
+<div><h3>Email</h3><p>rivieradirectclub@gmail.com - Per inviare info struttura</p></div>
+<div class="arrow">→</div>
+</a>
+
+<a href="https://instagram.com/rivieradirectclub" target="_blank" class="card">
+<div class="icon">📸</div>
+<div><h3>Instagram</h3><p>Segui aggiornamenti e casi studio</p></div>
+<div class="arrow">→</div>
+</a>
+</div>
+
+<div class="nota">
+<b>Come lavoriamo:</b> B&B, affittacamere, case vacanze e hotel indipendenti. L'obiettivo è aiutarti a valorizzare il tuo canale diretto (Google + WhatsApp + Email) affiancandolo ai portali che già usi. Per il marketing, lavoriamo solo con ospiti che hanno dato consenso esplicito via WhatsApp.
+</div>
+
+<div class="foot">© Riviera Direct Club — Progetto nato nel Ponente Ligure, aperto a strutture indipendenti in tutta la Riviera</div>
+
 </div>
 </body>
 </html>
